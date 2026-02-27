@@ -1,0 +1,142 @@
+name: production-kpi-dashboard-designer
+namespace: mineagent
+version: 1.0.0
+description: >
+  Designs optimized KPI dashboards for mining operations including shaft-level
+  production, tonnage tracking, development meters, cost per ton analysis, and
+  equipment utilization. Suggests KPIs per department, defines aggregation logic,
+  recommends visualization types, and prevents misleading charts through
+  mining-domain-aware design principles.
+
+author: MineAgent
+license: MIT
+
+compatibility:
+  departments:
+    - production
+    - maintenance
+    - geology
+    - surveying
+    - finance
+    - executive
+    - safety
+    - environment
+  visualization_tools:
+    - power_bi
+    - tableau
+    - grafana
+    - superset
+    - excel
+    - custom_web
+  data_sources:
+    - sql_server
+    - postgresql
+    - mysql
+    - oracle
+    - historian
+    - scada
+    - cmms
+    - erp
+
+activation:
+  triggers:
+    - design production dashboard
+    - create KPI dashboard
+    - mining dashboard layout
+    - production metrics visualization
+    - shaft-level dashboard
+    - tonnage tracking dashboard
+    - cost per ton dashboard
+    - equipment utilization dashboard
+    - executive summary dashboard
+    - department KPIs
+  context_keywords:
+    - production
+    - tonnage
+    - development
+    - shaft
+    - stope
+    - ore
+    - waste
+    - grade
+    - recovery
+    - utilization
+    - availability
+    - downtime
+    - cost_per_ton
+    - mttf
+    - mtbf
+    - kpi
+    - dashboard
+    - visualization
+    - metric
+    - target
+    - actual
+    - variance
+
+required_inputs:
+  - department
+  - data_schema
+  - business_questions
+
+optional_inputs:
+  - existing_dashboards
+  - user_personas
+  - refresh_frequency
+  - alert_thresholds
+  - date_range_preference
+  - comparison_periods
+  - budget_targets
+
+tools:
+  - kpi_definer
+  - visualization_recommender
+  - aggregation_logic_generator
+  - layout_designer
+  - query_optimizer
+  - chart_advisor
+
+constraints:
+  - prevent_misleading_visualizations
+  - ensure_appropriate_aggregation
+  - maintain_drill_down_capability
+  - respect_data_cardinality
+  - consider_refresh_performance
+  - avoid_chart_junk
+  - follow_color_blind_accessible_palettes
+
+output_structure:
+  - kpi_definitions
+  - dashboard_layout
+  - visualization_recommendations
+  - aggregation_logic
+  - sample_queries
+  - refresh_strategy
+  - alert_configuration
+  - user_guide
+
+quality_standards:
+  - mining_domain_aware
+  - kpi_definitions_aligned_to_industry
+  - aggregation_levels_appropriate
+  - performance_optimized
+  - accessible_design
+  - mobile_responsive_considerations
+  - production_ready
+
+tags:
+  - dashboard
+  - kpi
+  - production
+  - visualization
+  - business_intelligence
+  - mining
+  - tonnage
+  - utilization
+  - cost_analysis
+  - executive_reporting
+  - operations
+  - bi
+
+confidence_level: high
+maintenance_model: community_curated

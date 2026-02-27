@@ -1,0 +1,135 @@
+name: predictive-maintenance-analyzer
+namespace: mineagent
+version: 1.0.0
+description: >
+  Analyzes equipment telemetry data to detect failure patterns, predict
+  maintenance needs, and prevent unplanned downtime in mining operations.
+  Processes vibration, temperature, pressure, and operational data from
+  drills, loaders, trucks, conveyors, and ventilation systems to identify
+  anomalies and generate maintenance recommendations.
+
+author: MineAgent
+license: MIT
+
+compatibility:
+  equipment_types:
+    - drills
+    - loaders
+    - haul_trucks
+    - conveyors
+    - crushers
+    - mills
+    - ventilation_fans
+    - pumps
+    - compressors
+  data_sources:
+    - telemetry_csv
+    - historian_db
+    - scada
+    - iot_sensors
+    - maintenance_logs
+    - cmms
+  environments:
+    - operations
+    - maintenance_planning
+    - reliability_engineering
+    - production
+
+activation:
+  triggers:
+    - analyze equipment telemetry
+    - predict maintenance
+    - detect failure patterns
+    - equipment anomaly detection
+    - vibration analysis
+    - prevent unplanned downtime
+    - maintenance schedule optimization
+    - telemetry data analysis
+    - drill health check
+    - conveyor monitoring
+  context_keywords:
+    - equipment
+    - telemetry
+    - vibration
+    - temperature
+    - pressure
+    - rms
+    - peak acceleration
+    - maintenance
+    - downtime
+    - failure
+    - anomaly
+    - sensor
+    - mttf
+    - mtbf
+    - conveyor
+    - drill
+    - loader
+    - haul_truck
+
+required_inputs:
+  - equipment_type
+  - telemetry_data
+  - data_timestamp_field
+
+optional_inputs:
+  - maintenance_history
+  - failure_logs
+  - equipment_specifications
+  - operating_parameters
+  - threshold_values
+  - baseline_data
+  - sampling_frequency
+
+tools:
+  - time_series_analyzer
+  - anomaly_detector
+  - feature_engineer
+  - pattern_recognizer
+  - ml_dataset_generator
+  - trend_analyzer
+
+constraints:
+  - never_predict_without_confidence
+  - always_consider_operational_context
+  - flag_insufficient_data
+  - require_timestamp_validation
+  - preserve_traceability_to_source
+  - account_for_sensor_noise
+
+output_structure:
+  - anomaly_detections
+  - failure_predictions
+  - confidence_scores
+  - feature_importance
+  - recommended_actions
+  - maintenance_schedule_updates
+  - ml_ready_dataset
+  - executive_summary
+
+quality_standards:
+  - timestamp_validated
+  - outliers_flagged_not_removed
+  - domain_thresholds_applied
+  - multiple_detection_methods
+  - confidence_intervals_reported
+  - mining_equipment_aware
+  - production_ready
+
+tags:
+  - predictive-maintenance
+  - equipment
+  - telemetry
+  - anomaly-detection
+  - vibration-analysis
+  - mining-equipment
+  - reliability
+  - downtime-prevention
+  - iot
+  - condition-monitoring
+  - maintenance
+  - mttf
+  - mtbf
+
+confidence_level: high
+maintenance_model: community_curated

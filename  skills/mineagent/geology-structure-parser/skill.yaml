@@ -1,0 +1,113 @@
+name: geology-structure-parser
+namespace: mineagent
+version: 1.0.0
+description: >
+  Processes and validates geological structural data including faults, dykes,
+  reef horizons, and wireframes. Standardizes geological naming conventions,
+  validates shaft-reef relationships, flags missing attributes, and generates
+  structured JSON for BI integration and resource modeling.
+
+author: MineAgent
+license: MIT
+
+compatibility:
+  data_formats:
+    - csv
+    - json
+    - dxf
+    - datamine
+    - vulcan
+    - leapfrog
+    - excel
+  environments:
+    - exploration
+    - resource_estimation
+    - mine_planning
+    - bi_reporting
+    - reconciliation
+
+activation:
+  triggers:
+    - parse geological structure
+    - validate wireframe
+    - process fault data
+    - analyze reef horizon
+    - structural interpretation
+    - geological naming standardize
+    - block model validation
+  context_keywords:
+    - fault
+    - dyke
+    - reef
+    - horizon
+    - wireframe
+    - shaft
+    - elevation
+    - hangingwall
+    - footwall
+    - strike
+    - dip
+    - azimuth
+    - orebody
+    - blockmodel
+
+required_inputs:
+  - geological_data
+  - data_format
+  - structure_type  # fault, dyke, reef, wireframe, horizon
+
+optional_inputs:
+  - coordinate_reference_system  # WGS84, LO27, etc.
+  - shaft_reference
+  - mine_calibration_data
+  - expected_attribute_list
+  - validation_rules
+
+tools:
+  - spatial_parser
+  - coordinate_transformer
+  - attribute_validator
+  - json_generator
+  - geological_naming
+
+constraints:
+  - preserve_spatial_integrity
+  - never_invent_geological_features
+  - flag_missing_attributes_not_assume
+  - maintain_traceability_to_source
+  - respect_geological_hierarchy
+  - no_absolute_paths
+
+output_structure:
+  - parsed_structures
+  - validation_report
+  - flagged_issues
+  - standardized_naming
+  - bi_ready_json
+  - coordinate_summary
+  - attribute_completeness_score
+
+quality_standards:
+  - industry_naming_conventions
+  - spatial_reference_included
+  - attribute_validation_complete
+  - traceable_to_original
+  - mining_domain_aware
+  - production_ready
+
+tags:
+  - geology
+  - structure
+  - fault
+  - dyke
+  - reef
+  - wireframe
+  - spatial
+  - resource-model
+  - exploration
+  - mining-geology
+  - block-model
+  - validation
+
+confidence_level: high
+maintenance_model: community_curated

@@ -1,0 +1,106 @@
+name: sql-query-optimizer
+namespace: mineagent
+version: 1.2.0  # Bump to match skill.md version
+description: >
+  Optimizes large-scale SQL queries for mining production, geological,
+  and equipment telemetry databases. Applies shaft-level filtering,
+  reef-aware aggregation logic, composite index strategy, and execution
+  plan analysis to improve performance without altering business logic.
+
+author: MineAgent
+license: MIT
+
+compatibility:
+  databases:
+    - sqlserver
+    - postgresql
+    - mysql
+    - oracle  # Added Oracle (common in mining)
+    - sqlite  # For testing/edge deployments
+  environments:
+    - production
+    - staging
+    - bi_reporting
+    - development
+
+activation:
+  triggers:
+    - optimize this query
+    - improve sql performance
+    - slow mining query
+    - block model query optimization
+    - production report timeout
+    - execution plan analysis
+    - query tuning  # Added
+    - index recommendation  # Added
+  context_keywords:
+    - shaft
+    - reef
+    - blockmodel
+    - production
+    - geological
+    - telemetry
+    - shift
+    - equipment
+    - assay  # Added
+    - tonnage  # Added
+
+required_inputs:
+  - sql_query
+  - database_type
+
+optional_inputs:
+  - execution_plan
+  - table_statistics
+  - index_list
+  - row_counts
+  - query_purpose  # Added - helps with intent understanding
+
+tools:
+  - sql
+  - query_analysis
+  - execution_plan_interpreter
+  - index_advisor  # Added
+
+constraints:
+  - never_modify_business_logic
+  - never_remove_required_filters
+  - avoid_select_star
+  - enforce_dimensional_grouping
+  - prioritize_accuracy_over_speed
+  - preserve_sort_order  # Added
+  - respect_window_functions  # Added
+
+output_structure:
+  - optimized_query
+  - changes_made
+  - index_recommendations
+  - execution_plan_improvements
+  - risk_notes
+  - estimated_improvement  # Added
+  - alternative_approaches  # Added
+
+quality_standards:
+  - no_hardcoded_credentials
+  - no_absolute_paths
+  - mining_domain_aware
+  - performance_safe
+  - production_ready
+  - tested_on_sample_data  # Added
+  - includes_fallback_strategy  # Added
+
+tags:
+  - mining
+  - sql
+  - database
+  - performance
+  - block-model
+  - bi
+  - shaft-filtering
+  - execution-plan
+  - query-tuning
+  - indexing
+  - etl
+
+confidence_level: high
+maintenance_model: community_curated

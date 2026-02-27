@@ -1,0 +1,141 @@
+name: safety-report-generator
+namespace: mineagent
+version: 1.0.0
+description: >
+  Transforms incident logs, near misses, and safety observations into
+  executive-level safety reports for mining operations. Categorizes incidents
+  by type and severity, calculates frequency rates (LTIFR, TRIFR), produces
+  executive summaries, highlights trend patterns, and suggests corrective actions
+  aligned with mining safety regulations and best practices.
+
+author: MineAgent
+license: MIT
+
+compatibility:
+  report_types:
+    - monthly_hse_report
+    - board_summary
+    - incident_investigation
+    - near_miss_analysis
+    - compliance_report
+    - safety_dashboard
+    - regulatory_filing
+    - trend_analysis
+  data_sources:
+    - incident_logs_csv
+    - safety_database
+    - near_miss_records
+    - observation_cards
+    - investigation_reports
+    - audit_findings
+  regulations:
+    - msha
+    - osha
+    - icmm
+    - iso_45001
+    - local_mining_acts
+
+activation:
+  triggers:
+    - generate safety report
+    - create HSE report
+    - incident analysis
+    - safety trends
+    - LTIFR calculation
+    - monthly safety summary
+    - board safety presentation
+    - near miss analysis
+    - safety performance review
+    - incident investigation report
+  context_keywords:
+    - safety
+    - incident
+    - accident
+    - near miss
+    - injury
+    - fatality
+    - lti
+    - lost time injury
+    - recordable
+    - first aid
+    - medical treatment
+    - high potential
+    - critical risk
+    - hazard
+    - observation
+    - msha
+    - osha
+    - compliance
+    - investigation
+    - root cause
+    - corrective action
+
+required_inputs:
+  - report_period
+  - incident_data
+  - workforce_hours
+
+optional_inputs:
+  - previous_period_data
+  - targets_and_goals
+  - investigation_reports
+  - corrective_actions_status
+  - audit_results
+  - leading_indicators
+  - site_information
+  - management_comments
+
+tools:
+  - incident_classifier
+  - rate_calculator
+  - trend_analyzer
+  - executive_summarizer
+  - recommendation_engine
+  - visualization_generator
+
+constraints:
+  - maintain_confidentiality
+  - never_minimize_severity
+  - preserve_investigation_integrity
+  - comply_with_regulations
+  - distinguish_facts_from_opinions
+  - include_recommendations_not_blame
+
+output_structure:
+  - executive_summary
+  - key_metrics
+  - incident_breakdown
+  - trend_analysis
+  - leading_indicators
+  - investigation_summaries
+  - corrective_actions
+  - recommendations
+  - appendices
+
+quality_standards:
+  - regulatory_compliant
+  - industry_standard_rates
+  - severity_appropriately_classified
+  - trends_statistically_significant
+  - recommendations_actionable
+  - mining_domain_aware
+  - production_ready
+
+tags:
+  - safety
+  - hse
+  - incident
+  - reporting
+  - compliance
+  - msha
+  - osha
+  - ltifr
+  - trifr
+  - near-miss
+  - investigation
+  - risk
+  - mining-safety
+  - board-report
+
+confidence_level: high
+maintenance_model: community_curated
